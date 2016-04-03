@@ -10,7 +10,7 @@
 ## default = false
 ### If true, only install updates from an Apple Software Update server.
 ### No munki repository is needed or used.
-#### /usr/bin/defaults write /Library/Preferences/ManagedInstalls AppleSoftwareUpdatesOnly -bool false
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls AppleSoftwareUpdatesOnly -bool True
 
 # InstallAppleSoftwareUpdates
 ## boolean
@@ -58,7 +58,7 @@
 ### Identifier for munki client.
 ### Usually is the same as a manifest name on the munki server.
 ### If this is empty or undefined, Munki will attempt the following identifiers, in order: fully-qualified hostname, "short" hostname, serial number and finally, "site_default"
-/usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientIdentifier -string "MuSec"
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientIdentifier -string "DTSec"
 
 # ManagedInstallDir
 ## string
