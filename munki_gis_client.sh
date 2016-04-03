@@ -29,7 +29,7 @@
 ## string
 ## default - "http://munki/repo"
 ### Base URL for munki repository
-/usr/bin/defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL -string "http://munki.FDQN"
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL -string "http://munki.gardenschool.edu.my"
 
 # PackageURL
 ## string
@@ -58,7 +58,7 @@
 ### Identifier for munki client.
 ### Usually is the same as a manifest name on the munki server.
 ### If this is empty or undefined, Munki will attempt the following identifiers, in order: fully-qualified hostname, "short" hostname, serial number and finally, "site_default"
-/usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientIdentifier -string "SecTea"
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientIdentifier -string "MuSec"
 
 # ManagedInstallDir
 ## string
@@ -174,7 +174,7 @@
 ## boolean
 ## default - false
 ### If true, Managed Software Update will hide the stop button while installing or removing software, preventing users from interrupting the install.
-#### /usr/bin/defaults write /Library/Preferences/ManagedInstalls SuppressStopButtonOnInstall -bool false
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls SuppressStopButtonOnInstall -bool True
 
 # InstallRequiresLogout
 ## boolean
@@ -203,7 +203,7 @@
 ## default - "<SoftwareRepoURL>/client_resources"
 ### Base URL for custom client resources for Managed Software Update.
 ### Useful if your resources are served from a different server or different directory than the default.
-#### /usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientResourceURL -string "http(s)://FDDQN/client_resources"
+/usr/bin/defaults write /Library/Preferences/ManagedInstalls ClientResourceURL -string "http://munki.gardenschool.edu.my/client_resources"
 
 # ClientResourceFilename
 ## string
